@@ -21,6 +21,8 @@
 		BA146BD5202C2A3B00D7C13B /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */; };
 		BA146BD8202C2AD500D7C13B /* DDEditorTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */; };
 		BA146BD9202C2AD500D7C13B /* DDEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */; };
+		BA146BE0202C38D700D7C13B /* DDGoNextTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BDE202C38D700D7C13B /* DDGoNextTableViewCell.h */; };
+		BA146BE1202C38D700D7C13B /* DDGoNextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BDF202C38D700D7C13B /* DDGoNextTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSwitchTableViewCell.m; sourceTree = "<group>"; };
 		BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDEditorTableViewCell.h; sourceTree = "<group>"; };
 		BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDEditorTableViewCell.m; sourceTree = "<group>"; };
+		BA146BDE202C38D700D7C13B /* DDGoNextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGoNextTableViewCell.h; sourceTree = "<group>"; };
+		BA146BDF202C38D700D7C13B /* DDGoNextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGoNextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */,
 				BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */,
 				BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */,
+				BA146BDE202C38D700D7C13B /* DDGoNextTableViewCell.h */,
+				BA146BDF202C38D700D7C13B /* DDGoNextTableViewCell.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA146BD4202C2A3B00D7C13B /* DDSwitchTableViewCell.h in Headers */,
+				BA146BE0202C38D700D7C13B /* DDGoNextTableViewCell.h in Headers */,
 				BA146BB7202C226A00D7C13B /* DingDingPod.h in Headers */,
 				BA146BD1202C27A400D7C13B /* DDRedPacketHeader.h in Headers */,
 				BA146BC1202C241600D7C13B /* DDRevokeMessageHeader.h in Headers */,
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA146BE1202C38D700D7C13B /* DDGoNextTableViewCell.m in Sources */,
 				BA146BB3202C226A00D7C13B /* DingDingPod.m in Sources */,
 				BA146BCF202C24FA00D7C13B /* DDWindow.m in Sources */,
 				BA146BD9202C2AD500D7C13B /* DDEditorTableViewCell.m in Sources */,

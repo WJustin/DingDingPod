@@ -11,6 +11,7 @@
 
 #import "DDSwitchTableViewCell.h"
 #import "DDEditorTableViewCell.h"
+#import "DDGoNextTableViewCell.h"
 
 @interface DDViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -39,10 +40,12 @@
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[DDSwitchTableViewCell class] forCellReuseIdentifier:DDSwitchTableViewCellId];
     [self.tableView registerClass:[DDEditorTableViewCell class] forCellReuseIdentifier:DDEditorTableViewCellId];
+    [self.tableView registerClass:[DDGoNextTableViewCell class]
+           forCellReuseIdentifier:DDGoNextTableViewCellId];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,9 +70,17 @@
     } else if (indexPath.row == 3) {
         DDEditorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DDEditorTableViewCellId];
         cell.textLabel.text = @"延迟秒数";
+        cell.textField.text = @([DDConfig shareConfig].robDelay).stringValue;
         [cell setDidEditValueChangedBlock:^(NSString *text) {
             [DDConfig shareConfig].robDelay = [text integerValue];
         }];
+        return cell;
+    } else if (indexPath.row == 4) {
+        DDGoNextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DDGoNextTableViewCellId];
+        cell.textLabel.text = @"我的GitHub";
+        cell.detailTextLabel.text = @"star";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return cell;
     }
     return nil;
 }
@@ -78,6 +89,11 @@
     return 45;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 4) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/WJustin/DingDingPod"]];
+    }
+}
 
 #pragma mark - Dequeue
 

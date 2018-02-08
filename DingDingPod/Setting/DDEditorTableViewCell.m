@@ -42,7 +42,7 @@ NSString * const DDEditorTableViewCellId = @"DDEditorTableViewCellId";
         _textField.textAlignment = NSTextAlignmentRight;
         [_textField addTarget:self
                        action:@selector(didEditValueChanged:)
-             forControlEvents:UIControlEventValueChanged];
+             forControlEvents:UIControlEventEditingChanged];
         [self.contentView addSubview:_textField];
     }
     return _textField;
