@@ -1,7 +1,7 @@
 # DingDingPod
 
 ## Preview
-<img src="https://github.com/WJustin/DingDingPod/blob/master/snaptshop.gif"/>
+<img src="https://github.com/WJustin/DingDingPod/blob/master/snaptshop.png"/>
 
 ## Installation
 
