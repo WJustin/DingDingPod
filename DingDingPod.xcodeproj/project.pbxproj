@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		BA146BB3202C226A00D7C13B /* DingDingPod.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BB2202C226A00D7C13B /* DingDingPod.m */; };
 		BA146BB7202C226A00D7C13B /* DingDingPod.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BB1202C226A00D7C13B /* DingDingPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA146BC1202C241600D7C13B /* DDRevokeMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BC0202C241600D7C13B /* DDRevokeMessageHeader.h */; };
+		BA146BC5202C244E00D7C13B /* DDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BC3202C244E00D7C13B /* DDConfig.h */; };
+		BA146BC6202C244E00D7C13B /* DDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BC4202C244E00D7C13B /* DDConfig.m */; };
+		BA146BCA202C249800D7C13B /* DDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BC8202C249800D7C13B /* DDViewController.h */; };
+		BA146BCB202C249800D7C13B /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BC9202C249800D7C13B /* DDViewController.m */; };
+		BA146BCE202C24FA00D7C13B /* DDWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BCC202C24FA00D7C13B /* DDWindow.h */; };
+		BA146BCF202C24FA00D7C13B /* DDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BCD202C24FA00D7C13B /* DDWindow.m */; };
+		BA146BD1202C27A400D7C13B /* DDRedPacketHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BD0202C27A400D7C13B /* DDRedPacketHeader.h */; };
+		BA146BD4202C2A3B00D7C13B /* DDSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BD2202C2A3B00D7C13B /* DDSwitchTableViewCell.h */; };
+		BA146BD5202C2A3B00D7C13B /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */; };
+		BA146BD8202C2AD500D7C13B /* DDEditorTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */; };
+		BA146BD9202C2AD500D7C13B /* DDEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +28,18 @@
 		BA146BB1202C226A00D7C13B /* DingDingPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingDingPod.h; sourceTree = "<group>"; };
 		BA146BB2202C226A00D7C13B /* DingDingPod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDingPod.m; sourceTree = "<group>"; };
 		BA146BB6202C226A00D7C13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA146BC0202C241600D7C13B /* DDRevokeMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRevokeMessageHeader.h; sourceTree = "<group>"; };
+		BA146BC3202C244E00D7C13B /* DDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDConfig.h; sourceTree = "<group>"; };
+		BA146BC4202C244E00D7C13B /* DDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDConfig.m; sourceTree = "<group>"; };
+		BA146BC8202C249800D7C13B /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
+		BA146BC9202C249800D7C13B /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
+		BA146BCC202C24FA00D7C13B /* DDWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDWindow.h; sourceTree = "<group>"; };
+		BA146BCD202C24FA00D7C13B /* DDWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDWindow.m; sourceTree = "<group>"; };
+		BA146BD0202C27A400D7C13B /* DDRedPacketHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDRedPacketHeader.h; sourceTree = "<group>"; };
+		BA146BD2202C2A3B00D7C13B /* DDSwitchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSwitchTableViewCell.h; sourceTree = "<group>"; };
+		BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSwitchTableViewCell.m; sourceTree = "<group>"; };
+		BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDEditorTableViewCell.h; sourceTree = "<group>"; };
+		BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDEditorTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +72,47 @@
 		BA146BB0202C226A00D7C13B /* DingDingPod */ = {
 			isa = PBXGroup;
 			children = (
+				BA146BC7202C247600D7C13B /* Setting */,
+				BA146BC2202C242300D7C13B /* Config */,
+				BA146BBF202C23FB00D7C13B /* Headers */,
 				BA146BB1202C226A00D7C13B /* DingDingPod.h */,
 				BA146BB2202C226A00D7C13B /* DingDingPod.m */,
 				BA146BB6202C226A00D7C13B /* Info.plist */,
 			);
 			path = DingDingPod;
+			sourceTree = "<group>";
+		};
+		BA146BBF202C23FB00D7C13B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BA146BC0202C241600D7C13B /* DDRevokeMessageHeader.h */,
+				BA146BD0202C27A400D7C13B /* DDRedPacketHeader.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		BA146BC2202C242300D7C13B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BA146BC3202C244E00D7C13B /* DDConfig.h */,
+				BA146BC4202C244E00D7C13B /* DDConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BA146BC7202C247600D7C13B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BA146BC8202C249800D7C13B /* DDViewController.h */,
+				BA146BC9202C249800D7C13B /* DDViewController.m */,
+				BA146BCC202C24FA00D7C13B /* DDWindow.h */,
+				BA146BCD202C24FA00D7C13B /* DDWindow.m */,
+				BA146BD2202C2A3B00D7C13B /* DDSwitchTableViewCell.h */,
+				BA146BD3202C2A3B00D7C13B /* DDSwitchTableViewCell.m */,
+				BA146BD6202C2AD500D7C13B /* DDEditorTableViewCell.h */,
+				BA146BD7202C2AD500D7C13B /* DDEditorTableViewCell.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +122,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA146BD4202C2A3B00D7C13B /* DDSwitchTableViewCell.h in Headers */,
 				BA146BB7202C226A00D7C13B /* DingDingPod.h in Headers */,
+				BA146BD1202C27A400D7C13B /* DDRedPacketHeader.h in Headers */,
+				BA146BC1202C241600D7C13B /* DDRevokeMessageHeader.h in Headers */,
+				BA146BC5202C244E00D7C13B /* DDConfig.h in Headers */,
+				BA146BCE202C24FA00D7C13B /* DDWindow.h in Headers */,
+				BA146BCA202C249800D7C13B /* DDViewController.h in Headers */,
+				BA146BD8202C2AD500D7C13B /* DDEditorTableViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA146BB3202C226A00D7C13B /* DingDingPod.m in Sources */,
+				BA146BCF202C24FA00D7C13B /* DDWindow.m in Sources */,
+				BA146BD9202C2AD500D7C13B /* DDEditorTableViewCell.m in Sources */,
+				BA146BCB202C249800D7C13B /* DDViewController.m in Sources */,
+				BA146BD5202C2A3B00D7C13B /* DDSwitchTableViewCell.m in Sources */,
+				BA146BC6202C244E00D7C13B /* DDConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
