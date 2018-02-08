@@ -1,7 +1,11 @@
 # DingDingPod
 
-## Preview
-<img src="https://github.com/WJustin/DingDingPod/blob/master/snaptshop.png"/>
+## Features
+
+- 防撤回
+- 自动抢红包
+- 抢自己
+- 延迟秒数
 
 ## Installation
 
