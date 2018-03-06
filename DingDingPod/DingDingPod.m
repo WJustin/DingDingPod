@@ -12,6 +12,7 @@
 #import <CaptainHook/CaptainHook.h>
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+#import <CoreMotion/CoreMotion.h>
 #import "DDWindow.h"
 #import "DDConfig.h"
 
@@ -168,6 +169,31 @@ CHConstructor{
     CHLoadLateClass(DTConversationListDataSource);
     CHHook5(DTConversationListDataSource, controller, didChangeObject, atIndex, forChangeType, newIndex);
 }
+
+#pragma mark - step
+
+CHDeclareClass(CMPedometer)
+
+CHOptimizedMethod3(self, void, CMPedometer, queryPedometerDataFromDate, NSDate *, start, toDate, NSDate *, end, withHandler, CMPedometerHandler, handler) {
+    if ([DDConfig shareConfig].steps > 0) {
+        CMPedometerHandler hand = ^(CMPedometerData *pedometerData, NSError *error) {
+            [pedometerData setValue:@([DDConfig shareConfig].steps) forKeyPath:@"fNumberOfSteps"];
+            if (handler) {
+                handler(pedometerData, error);
+            }
+        };
+        CHSuper3(CMPedometer, queryPedometerDataFromDate, start, toDate, end, withHandler, handler ? hand : nil);
+    } else {
+        CHSuper3(CMPedometer, queryPedometerDataFromDate, start, toDate, end, withHandler, handler);
+    }
+}
+
+CHConstructor{
+    CHLoadLateClass(CMPedometer);
+    CHHook3(CMPedometer, queryPedometerDataFromDate, toDate, withHandler);
+}
+
+
 
 
 

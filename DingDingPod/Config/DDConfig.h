@@ -14,6 +14,7 @@
 @property (nonatomic, assign) BOOL canAutoRobRedPacket;
 @property (nonatomic, assign) BOOL canRobSelf;
 @property (nonatomic, assign) NSInteger robDelay;
+@property (nonatomic, assign) NSInteger steps;
 
 + (instancetype)shareConfig;
 

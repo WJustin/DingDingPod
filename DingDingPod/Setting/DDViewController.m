@@ -45,7 +45,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -76,6 +76,14 @@
         }];
         return cell;
     } else if (indexPath.row == 4) {
+        DDEditorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DDEditorTableViewCellId];
+        cell.textLabel.text = @"钉钉步数";
+        cell.textField.text = @([DDConfig shareConfig].steps).stringValue;
+        [cell setDidEditValueChangedBlock:^(NSString *text) {
+            [DDConfig shareConfig].steps = [text integerValue];
+        }];
+        return cell;
+    } else if (indexPath.row == 5) {
         DDGoNextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DDGoNextTableViewCellId];
         cell.textLabel.text = @"我的GitHub";
         cell.detailTextLabel.text = @"star";
@@ -90,7 +98,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 4) {
+    if (indexPath.row == 5) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/WJustin/DingDingPod"]];
     }
 }
