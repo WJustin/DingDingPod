@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = "DingDingPod"                               #Pod的名字
-  spec.version          = "1.0.0"                                     #版本号
+  spec.version          = "1.1.0"                                     #版本号
   spec.summary          = "A example pod for DingDingPod"
   spec.description      = <<-DESC                                     #Pod的描述
                           - A example pod for DingDingPod
